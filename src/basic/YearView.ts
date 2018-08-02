@@ -1,6 +1,7 @@
 import * as moment from 'moment'
 import { distributeHeight } from '../util'
 import BasicView from './BasicView'
+import MonthGrid from './MonthGrid'
 import MonthViewDateProfileGenerator from './MonthViewDateProfileGenerator'
 
 export default class YearView extends BasicView {
@@ -22,5 +23,5 @@ export default class YearView extends BasicView {
     }
   
   }
-  
+  YearView.prototype.dayGridClass = MonthGrid;
   YearView.prototype.dateProfileGeneratorClass = MonthViewDateProfileGenerator
